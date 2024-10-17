@@ -12,6 +12,7 @@
   "dependencies": {
     "@nuxt/ui": "^2.18.7",
     "@nuxtjs/google-fonts": "^3.2.0",
+    "clsx": "^2.1.1",
     "nuxt": "^3.13.0",
     "vue": "latest",
     "vue-router": "latest"

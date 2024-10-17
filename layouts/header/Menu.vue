@@ -15,11 +15,11 @@ const MENU_LIST = [
     route: '/'
   },
   {
-    label: 'Home',
+    label: 'Products',
     route: '/2'
   },
   {
-    label: 'Home',
+    label: 'Tools',
     route: '/3'
   },
   {

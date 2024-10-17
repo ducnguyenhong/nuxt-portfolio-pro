@@ -1,5 +1,5 @@
 <template>
-  <div class="mt-12 p-3.5 rounded-md border border-dashed border-[#e6e6e6]">
+  <div class="mt-16 p-3.5 rounded-md border border-dashed border-[#e6e6e6]">
     <div class="flex items-start justify-between">
       <div class="flex flex-1 items-center gap-3">
         <div class="flex items-center justify-center rounded-lg w-8 h-5 border border-red-600 text-red-600 text-xs">

@@ -1,5 +1,5 @@
 <template>
-  <div class="mt-12">
+  <div class="mt-16">
     <h1 class="mb-4 text-[#4A576F] opacity-40 uppercase font-extrabold text-[13px] tracking-[3px]">Skills</h1>
 
     <div class="flex flex-wrap gap-4">
