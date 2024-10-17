@@ -10,40 +10,6 @@
       <div>
         <div class="flex items-center gap-3">
           <p class="text-xl font-bold">Nguyen Hong Duc</p>
-
-          <UPopover :popper="{ placement: 'right' }">
-            <button type="button" title="More info">
-              <UIcon
-                name="i-mynaui-info-circle-solid"
-                class="w-4 h-4 text-[#a6a6a6] hover:text-[#8c8c8c] duration-200"
-              />
-            </button>
-
-            <template #panel>
-              <div class="px-3.5 py-2.5">
-                <Placeholder>
-                  <div class="flex flex-col gap-3">
-                    <div class="flex items-center gap-2">
-                      <UIcon name="i-mingcute-birthday-2-line" class="w-[18px] h-[18px] text-[#4f4f4f]" />
-                      <p class="text-[#4f4f4f] font-medium mt-[3px] text-[13px]">11/12/1999</p>
-                    </div>
-                    <div class="flex items-center gap-2">
-                      <UIcon name="i-material-symbols-home-pin-outline" class="w-[19px] h-[19px] text-[#4f4f4f]" />
-                      <p class="text-[#4f4f4f] font-medium mt-[1px] text-[13px]">Cau Giay, Ha Noi</p>
-                    </div>
-                    <div class="flex items-center gap-2">
-                      <UIcon name="i-material-symbols-call-outline" class="w-[18px] h-[18px] text-[#4f4f4f]" />
-                      <p class="text-[#4f4f4f] font-medium mt-[1px] text-[13px]">0389755202</p>
-                    </div>
-                    <div class="flex items-center gap-2">
-                      <UIcon name="i-material-symbols-mail-outline" class="w-[18px] h-[18px] text-[#4f4f4f]" />
-                      <p class="text-[#4f4f4f] font-medium mt-[-1px] text-[13px]">nguyenhongduc.work@gmail.com</p>
-                    </div>
-                  </div>
-                </Placeholder>
-              </div>
-            </template>
-          </UPopover>
         </div>
         <p class="text-sm text-[#4A576F] mt-1">Front-End Developer</p>
       </div>
