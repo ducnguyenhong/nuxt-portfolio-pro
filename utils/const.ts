@@ -26,8 +26,13 @@ export const SKILLS: Skill[] = [
     type: ['WEBSITE']
   },
   {
-    name: 'ReactJS',
+    name: 'React',
     icon: 'https://cdn.iconscout.com/icon/free/png-256/free-react-logo-icon-download-in-svg-png-gif-file-formats--technology-social-media-vol-5-pack-logos-icons-2945110.png?f=webp&w=256',
+    type: ['WEBSITE']
+  },
+  {
+    name: 'Angular',
+    icon: 'https://houseofangular.io/wp-content/uploads/2023/11/AngularLogoGradient.png',
     type: ['WEBSITE']
   },
   {
@@ -36,13 +41,13 @@ export const SKILLS: Skill[] = [
     type: ['MOBILE_DESKTOP']
   },
   {
-    name: 'NextJS',
-    icon: 'https://cdn.worldvectorlogo.com/logos/next-js.svg',
+    name: 'Vue',
+    icon: 'https://www.golden-team.org/static/services/vuejs.webp',
     type: ['WEBSITE']
   },
   {
-    name: 'VueJS',
-    icon: 'https://www.golden-team.org/static/services/vuejs.webp',
+    name: 'NextJS',
+    icon: 'https://cdn.worldvectorlogo.com/logos/next-js.svg',
     type: ['WEBSITE']
   },
   {

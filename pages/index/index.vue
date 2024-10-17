@@ -8,8 +8,8 @@
 
 <script setup>
 useSeoMeta({
-  title: 'Nguyen Hong Duc Portfolio',
-  ogTitle: 'My Amazing Site',
+  title: 'Nguyễn Hồng Đức - Portfolio',
+  ogTitle: 'Nguyễn Hồng Đức - Portfolio',
   description: 'This is my amazing site, let me tell you all about it.',
   ogDescription: 'This is my amazing site, let me tell you all about it.',
   ogImage: 'https://example.com/image.png',

@@ -1,8 +1,8 @@
 <template>
-  <div class="mt-14">
-    <h1 class="mb-4 text-[#4A576F] opacity-40 uppercase font-extrabold text-[13px] tracking-[3px]">Skills</h1>
+  <div class="mt-16">
+    <SectionHome title="Skills" />
 
-    <div class="flex items-center gap-6 mb-4">
+    <div class="flex items-center gap-6 mb-6">
       <div v-for="item in TABS" :key="item.title">
         <button
           type="button"
@@ -32,6 +32,7 @@
 </template>
 
 <script setup lang="ts">
+import SectionHome from '~/components/SectionHome.vue';
 import { SKILLS } from '../../utils/const';
 
 const tabActive = ref('WEBSITE');

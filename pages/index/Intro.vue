@@ -21,7 +21,7 @@
         contribute my skills in a professional environment.
       </p>
       <p class="text-[#22242C] mt-4">
-        And I am the founder of the <DiscoveryLink content="Stormik Browser" link="https://stormik.org" />
+        And I am the founder of <DiscoveryLink content="Stormik" link="https://stormik.org" /> browser!
       </p>
     </div>
   </div>

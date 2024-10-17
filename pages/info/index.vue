@@ -23,9 +23,27 @@
             >
               {{ item.label }}
             </p>
-            <p class="font-semibold text-[15px] text-[#4f4f4f] px-8 relative -bottom-7">
-              {{ item.value }}
-            </p>
+            <div class="flex items-center gap-2 relative -bottom-7 px-8 group">
+              <button
+                v-if="index % 2 === 0"
+                type="button"
+                title="Copy"
+                class="opacity-0 invisible group-hover:opacity-100 group-hover:visible duration-200"
+              >
+                <UIcon name="i-material-symbols-content-copy-outline-rounded" class="w-4 h-4 text-[#828282]" />
+              </button>
+              <p class="font-semibold text-[15px] text-[#4f4f4f]">
+                {{ item.value }}
+              </p>
+              <button
+                v-if="index % 2 !== 0"
+                type="button"
+                title="Copy"
+                class="opacity-0 invisible group-hover:opacity-100 group-hover:visible duration-200"
+              >
+                <UIcon name="i-material-symbols-content-copy-outline-rounded" class="w-4 h-4 text-[#828282]" />
+              </button>
+            </div>
             <div
               :class="[
                 'flex justify-center items-center w-[18px] h-[18px] bg-gradient-to-r from-[#902ce1] to-[#fe2497] rounded-full absolute -bottom-[10px]',
@@ -54,7 +72,7 @@
 
 <script setup lang="ts">
 useSeoMeta({
-  title: 'Information | Nguyen Hong Duc Portfolio',
+  title: 'Information | Nguyễn Hồng Đức - Portfolio',
   ogTitle: 'My Amazing Site',
   description: 'This is my amazing site, let me tell you all about it.',
   ogDescription: 'This is my amazing site, let me tell you all about it.',
