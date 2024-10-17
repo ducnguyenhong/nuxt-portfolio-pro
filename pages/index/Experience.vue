@@ -1,5 +1,5 @@
 <template>
-  <div class="mt-16">
+  <div class="mt-14">
     <h1 class="mb-4 text-[#4A576F] opacity-40 uppercase font-extrabold text-[13px] tracking-[3px]">Experience</h1>
 
     <div>
@@ -10,8 +10,8 @@
             <img :src="item.workplaceLogo" class="w-6 h-6 object-contain" />
           </div>
           <div class="flex flex-col flex-1 gap-2">
-            <p class="text-xs text-[#a6a6a6]">{{ item.duration }}</p>
             <p class="font-bold">{{ item.workplace }}</p>
+            <p class="text-xs text-[#a6a6a6]">{{ item.duration }}</p>
             <p class="text-sm text-[#828282]">{{ item.description }}</p>
           </div>
         </div>
@@ -25,33 +25,29 @@ const TIMELINE = [
   {
     workplace: 'FPT Software',
     duration: '10/2024 - Now',
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis euismod, velit vel consequat congue, metus velit pellentesque velit, et sagittis risus neque eu justo.',
+    description: 'Participate in developing telecommunications outsourcing projects',
     workplaceLogo: 'https://upload.wikimedia.org/wikipedia/commons/2/29/FPT_Software_Logo.png',
     technologies: ['HTML', 'CSS', 'Javascript', 'Typescript', 'ReactJS']
   },
   {
-    workplace: 'Vndirect Securities Coporation',
+    workplace: 'Vndirect Securities Corporation',
     duration: '01/2022 - 09/2024',
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis euismod, velit vel consequat congue, metus velit pellentesque velit, et sagittis risus neque eu justo.',
+    description: 'Participate in developing support projects for securities users',
     workplaceLogo: 'https://cdn.haitrieu.com/wp-content/uploads/2022/02/Icon-VNDIRECT.png',
     technologies: ['HTML', 'CSS', 'Javascript', 'Typescript', 'ReactJS']
   },
   {
     workplace: 'Egroup',
     duration: '06/2020 - 12/2021',
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis euismod, velit vel consequat congue, metus velit pellentesque velit, et sagittis risus neque eu justo.',
+    description: 'Participate in developing an online English teaching website system',
     workplaceLogo:
       'https://yt3.googleusercontent.com/ytc/AIdro_neHBmE6lLCFeUqpjfJ7mmNqjACJiJdtEWwcmq6Ssc0vQ=s900-c-k-c0x00ffffff-no-rj',
     technologies: ['HTML', 'CSS', 'Javascript', 'Typescript', 'ReactJS']
   },
   {
-    workplace: 'University of Transport and Communication',
+    workplace: 'University of Transport and Communications',
     duration: '09/2017 - 06/2021',
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis euismod, velit vel consequat congue, metus velit pellentesque velit, et sagittis risus neque eu justo.',
+    description: 'Studied and graduated in 2021 (IT Engineer)',
     workplaceLogo:
       'https://media.licdn.com/dms/image/v2/C4D0BAQHqJ_xgXJkmaA/company-logo_200_200/company-logo_200_200/0/1630568271119?e=2147483647&v=beta&t=QO1tf6gxuJSLawE8ZIqH9QPRPuGbNeSrxF2hNwwtELc',
     technologies: ['HTML', 'CSS', 'Javascript', 'Typescript', 'ReactJS']

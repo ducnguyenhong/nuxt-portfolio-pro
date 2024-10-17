@@ -7,8 +7,8 @@
     <div class="grid grid-cols-3 gap-6">
       <div v-for="item in PROJECTS" :key="item.name">
         <img :src="item.thumbnail" class="w-full h-40 object-cover rounded-lg" />
-        <p class="font-bold mt-3">{{ item.name }}</p>
-        <p class="text-[#828282] mt-1 text-sm">{{ item.description }}</p>
+        <p class="font-bold mt-2">{{ item.name }}</p>
+        <p class="text-[#828282] mt-0.5 text-sm">{{ item.description }}</p>
       </div>
     </div>
   </div>
@@ -33,6 +33,29 @@ const PROJECTS = [
   },
   {
     name: 'Homefood',
+    description: 'Homefood',
+    demo: 'https://homefood.com.vn',
+    thumbnail: 'https://cdn.stockbook.vn/static/images/ReviewImage.jpg',
+    technologies: ['ReactJS', 'ReactNative'],
+    types: 'Company project'
+  },
+  {
+    name: 'Stormik',
+    description: 'Stockbook',
+    demo: 'https://stockbook.vn',
+    thumbnail: 'https://cdn.stockbook.vn/static/images/ReviewImage.jpg',
+    technologies: ['ReactJS', 'ReactNative'],
+    types: 'Company project'
+  },
+  {
+    name: '84.GO',
+    description: 'Knowledge Management System (KMS)',
+    thumbnail: 'https://cdn.stockbook.vn/static/images/ReviewImage.jpg',
+    technologies: ['ReactJS', 'ReactNative'],
+    types: 'Company project'
+  },
+  {
+    name: 'Homefood2',
     description: 'Homefood',
     demo: 'https://homefood.com.vn',
     thumbnail: 'https://cdn.stockbook.vn/static/images/ReviewImage.jpg',

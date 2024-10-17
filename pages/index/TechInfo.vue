@@ -1,9 +1,11 @@
 <template>
-  <div class="mt-16 p-3.5 rounded-md border border-dashed border-[#e6e6e6]">
+  <div class="mt-14 p-3.5 pb-3 rounded-md border border-dashed border-[#e6e6e6]">
     <div class="flex items-start justify-between">
       <div class="flex flex-1 items-center gap-3">
-        <div class="flex items-center justify-center rounded-lg w-8 h-5 border border-red-600 text-red-600 text-xs">
-          Hot
+        <div
+          class="flex items-center text-center justify-center rounded-lg w-9 h-5 border border-purple-700 text-purple-700 text-[11px]"
+        >
+          New
         </div>
         <span class="text-[#4A576F] text-sm">This website is using VueJS</span>
         <img
@@ -21,17 +23,6 @@
             class="w-5 h-5 text-gray-400 hover:text-gray-500 duration-w00"
           />
         </button>
-      </div>
-    </div>
-
-    <div class="mt-3 flex flex-wrap items-center gap-6">
-      <div v-for="item in TECHNOLOGY_LIST" :key="item.title">
-        <img
-          :src="item.logo"
-          :alt="item.title"
-          :title="item.title"
-          class="h-5 w-auto object-cover filter grayscale opacity-50"
-        />
       </div>
     </div>
   </div>

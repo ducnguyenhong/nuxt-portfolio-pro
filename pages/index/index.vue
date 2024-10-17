@@ -4,7 +4,6 @@
   <Skills />
   <Experience />
   <Projects />
-  <News />
 </template>
 
 <script setup>
@@ -19,7 +18,6 @@ useSeoMeta({
 
 import Experience from './Experience.vue';
 import Intro from './Intro.vue';
-import News from './News.vue';
 import Projects from './Projects.vue';
 import Skills from './Skills.vue';
 import TechInfo from './TechInfo.vue';

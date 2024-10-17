@@ -54,7 +54,13 @@
         Hi, I am a frontend developer with over 4 years of experience. As a curious learner, I aspire to develop and
         contribute my skills in a professional environment.
       </p>
-      <p class="text-[#22242C] mt-4">And I am also the founder of the Stormik Browser!</p>
+      <p class="text-[#22242C] mt-4">
+        And I am the founder of the <DiscoveryLink content="Stormik Browser" link="https://stormik.org" />
+      </p>
     </div>
   </div>
 </template>
+
+<script setup lang="ts">
+import DiscoveryLink from '../../components/DiscoveryLink.vue';
+</script>

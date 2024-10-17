@@ -14,17 +14,21 @@
     </div>
 
     <div class="flex items-center gap-4">
-      <NuxtLink to="/">
+      <NuxtLink to="https://facebook.com/ducnh99" target="_blank" title="Facebook">
         <UIcon name="i-mdi-facebook" class="w-5 h-5 text-gray-600" />
       </NuxtLink>
 
-      <NuxtLink to="/">
+      <NuxtLink to="https://linkedin.com/in/ducnh99" target="_blank" title="Linkedin">
         <UIcon name="i-mdi-linkedin" class="w-5 h-5 text-gray-600" />
       </NuxtLink>
 
-      <NuxtLink to="/">
+      <NuxtLink to="https://github.com/ducnguyenhong" target="_blank" title="Github">
         <UIcon name="i-mdi-github" class="w-5 h-5 text-gray-600" />
       </NuxtLink>
+
+      <button type="button" title="Dark mode">
+        <UIcon name="i-line-md-sunny-filled-loop-to-moon-filled-loop-transition" class="w-5 h-5 text-gray-600" />
+      </button>
     </div>
   </header>
 </template>

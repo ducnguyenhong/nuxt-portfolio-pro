@@ -15,15 +15,15 @@ const MENU_LIST = [
     route: '/'
   },
   {
-    label: 'Products',
-    route: '/2'
+    label: 'Info',
+    route: '/info'
+  },
+  {
+    label: 'Product',
+    route: '/product'
   },
   {
     label: 'Tools',
-    route: '/3'
-  },
-  {
-    label: 'CV',
     route: '/4'
   }
 ];
