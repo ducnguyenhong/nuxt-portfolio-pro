@@ -164,7 +164,7 @@ export const SKILLS: Skill[] = [
   }
 ];
 
-interface Project {
+export interface Project {
   name: string;
   description: string;
   thumbnail: string;
@@ -297,8 +297,8 @@ export const FAQS: Faq[] = [
       'In the header of the website, you can find the "Projects" section. Click on that to view all of my projects. If you want more details, you can click on a specific project.'
   },
   {
-    label: 'Need more personal information',
-    content: 'In the header of the website, click on the "Info" section to view additional information.'
+    label: 'CV PDF',
+    content: 'In the header of the website, click on the "Info" section and you can see it.'
   },
   {
     label: 'Use this portfolio template',
@@ -335,10 +335,5 @@ export const SPONSOR_LIST: Sponsor[] = [
     name: 'Github',
     logo: '/images/Github.webp',
     link: 'https://github.com'
-  },
-  {
-    name: 'Figma',
-    logo: '/images/Figma.webp',
-    link: 'https://figma.com'
   }
 ];

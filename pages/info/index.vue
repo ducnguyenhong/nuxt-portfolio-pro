@@ -9,7 +9,7 @@
       <div v-for="(item, index) in INFO_LIST" :key="item.label" class="gap-3 flex items-center">
         <div
           :class="[
-            'relative flex flex-col w-80 pt-5 border-purple-300',
+            'relative flex flex-col w-48 md:w-80 pt-5 border-purple-300',
             index % 2 === 0 ? '-translate-x-1/2 items-end border-r -mr-[2px] ' : 'translate-x-1/2 items-start border-l',
             index === INFO_LIST.length - 1 ? 'pb-16' : 'pb-5'
           ]"
@@ -17,29 +17,31 @@
           <div class="border-b relative border-purple-300">
             <p
               :class="[
-                'text-[12px] text-[#a6a6a6] tracking-[0.5px] px-8 relative top-4',
+                'text-[12px] text-[#a6a6a6] tracking-[0.5px] px-3 md:px-8 relative top-4',
                 index % 2 === 0 ? 'text-right' : undefined
               ]"
             >
               {{ item.label }}
             </p>
-            <div class="flex items-center gap-2 relative -bottom-7 px-8 group">
+            <div class="flex items-center gap-2 relative -bottom-7 px-3 md:px-8 group">
               <button
                 v-if="index % 2 === 0"
                 type="button"
                 title="Copy"
-                class="opacity-0 invisible group-hover:opacity-100 group-hover:visible duration-200"
+                class="opacity-0 invisible lg:group-hover:opacity-100 lg:group-hover:visible duration-200 hidden md:block"
+                @click="onCopyText(item.value)"
               >
                 <UIcon name="i-material-symbols-content-copy-outline-rounded" class="w-4 h-4 text-[#828282]" />
               </button>
-              <p class="font-semibold text-[15px] text-[#4f4f4f]">
+              <p class="font-semibold text-[15px] text-[#4f4f4f] break-all md:break-normal">
                 {{ item.value }}
               </p>
               <button
                 v-if="index % 2 !== 0"
                 type="button"
                 title="Copy"
-                class="opacity-0 invisible group-hover:opacity-100 group-hover:visible duration-200"
+                class="opacity-0 invisible lg:group-hover:opacity-100 lg:group-hover:visible duration-200 hidden md:block"
+                @click="onCopyText(item.value)"
               >
                 <UIcon name="i-material-symbols-content-copy-outline-rounded" class="w-4 h-4 text-[#828282]" />
               </button>
@@ -73,9 +75,9 @@
 <script setup lang="ts">
 useSeoMeta({
   title: 'Information | Nguyễn Hồng Đức - Portfolio',
-  ogTitle: 'My Amazing Site',
-  description: 'This is my amazing site, let me tell you all about it.',
-  ogDescription: 'This is my amazing site, let me tell you all about it.',
+  ogTitle: 'Information | Nguyễn Hồng Đức - Portfolio',
+  description: 'Information | Nguyễn Hồng Đức - Portfolio',
+  ogDescription: 'Information | Nguyễn Hồng Đức - Portfolio',
   ogImage: 'https://example.com/image.png',
   twitterCard: 'summary_large_image'
 });
@@ -110,4 +112,8 @@ const INFO_LIST = [
     href: 'mailto:nguyenhongduc.work@gmail.com'
   }
 ];
+
+const onCopyText = (text: string) => {
+  navigator.clipboard.writeText(text);
+};
 </script>

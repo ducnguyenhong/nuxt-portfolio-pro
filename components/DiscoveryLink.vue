@@ -7,7 +7,7 @@
     {{ content }}
     <UIcon
       name="i-material-symbols-arrow-outward-rounded"
-      class="w-[12px] h-[12px] relative -top-0.5 -ml-1 text-purple-800 group-hover:text-purple-600 duration-200"
+      class="w-[12px] h-[12px] relative -top-0.5 -ml-1 text-purple-800 lg:group-hover:text-purple-600 duration-200"
     />
   </a>
 </template>

@@ -7,7 +7,7 @@
             {{ item.label }}
           </p>
           <div
-            class="w-[2px] h-[1px] opacity-0 rounded-full bg-gradient-to-r from-[#902ce1] to-[#fe2497] group-hover:opacity-100 group-hover:w-full duration-300"
+            class="w-[2px] h-[1px] opacity-0 rounded-full bg-gradient-to-r from-[#902ce1] to-[#fe2497] lg:group-hover:opacity-100 lg:group-hover:w-full duration-300"
           />
         </div>
       </NuxtLink>
@@ -28,10 +28,6 @@ const MENU_LIST = [
   {
     label: 'Projects',
     route: '/projects'
-  },
-  {
-    label: 'Tools',
-    route: '/4'
   }
 ];
 </script>

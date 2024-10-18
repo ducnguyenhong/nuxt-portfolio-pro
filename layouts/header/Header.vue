@@ -42,16 +42,14 @@
         />
       </button>
 
-      <UPopover overlay :popper="{ placement: 'top-end' }">
+      <UPopover :popper="{ placement: 'top-end' }">
         <button type="button" title="Menu" class="md:hidden">
           <UIcon name="i-solar-hamburger-menu-linear" class="w-6 h-6 text-[#262626]" />
         </button>
 
         <template #panel>
-          <div class="px-6 py-3">
-            <Placeholder>
-              <Menu />
-            </Placeholder>
+          <div class="px-5 py-3">
+            <Menu />
           </div>
         </template>
       </UPopover>

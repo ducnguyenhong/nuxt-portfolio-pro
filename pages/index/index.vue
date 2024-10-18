@@ -3,7 +3,7 @@
   <TechInfo />
   <Skills />
   <Experience />
-  <Projects />
+  <TopProject />
   <FAQ />
   <Sponsor />
 </template>
@@ -12,8 +12,8 @@
 useSeoMeta({
   title: 'Nguyễn Hồng Đức - Portfolio',
   ogTitle: 'Nguyễn Hồng Đức - Portfolio',
-  description: 'This is my amazing site, let me tell you all about it.',
-  ogDescription: 'This is my amazing site, let me tell you all about it.',
+  description: 'Nguyễn Hồng Đức - Portfolio',
+  ogDescription: 'Nguyễn Hồng Đức - Portfolio',
   ogImage: 'https://example.com/image.png',
   twitterCard: 'summary_large_image'
 });
@@ -21,8 +21,8 @@ useSeoMeta({
 import Experience from './Experience.vue';
 import FAQ from './FAQ.vue';
 import Intro from './Intro.vue';
-import Projects from './Projects.vue';
 import Skills from './Skills.vue';
 import Sponsor from './Sponsor.vue';
 import TechInfo from './TechInfo.vue';
+import TopProject from './TopProject.vue';
 </script>

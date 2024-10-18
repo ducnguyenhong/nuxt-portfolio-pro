@@ -1,7 +1,7 @@
 <template>
   <div v-if="showInfo" class="mt-14 p-3.5 pb-3 rounded-md border border-dashed border-[#e6e6e6]">
     <div class="flex items-start justify-between">
-      <div class="flex flex-1 items-center gap-3 flex-wrap">
+      <div class="flex flex-1 items-center gap-x-3 gap-y-2 flex-wrap">
         <div
           class="flex items-center text-center justify-center rounded-lg w-9 h-5 bg-gradient-to-r from-[#902ce1] to-[#fe2497] text-white text-[11px] select-none"
         >
@@ -15,22 +15,20 @@
 
           <template #panel>
             <div class="px-4 py-3">
-              <Placeholder>
-                <div class="w-96">
-                  <p class="text-[13px] text-[#262626]">
-                    😁 Haha, I used to only learn and work with
-                    <span class="text-cyan-500 text-[13px]">ReactJS</span> until I was rejected for a high-paying job
-                    that required knowledge of both <span class="text-cyan-500 text-[13px]">ReactJS</span> and
-                    <span class="text-green-600 text-[13px]">VueJS</span>.
-                  </p>
+              <div class="w-96">
+                <p class="text-[13px] text-[#262626]">
+                  😁 Haha, I used to only learn and work with
+                  <span class="text-cyan-500 text-[13px]">ReactJS</span> until I was rejected for a high-paying job that
+                  required knowledge of both <span class="text-cyan-500 text-[13px]">ReactJS</span> and
+                  <span class="text-green-600 text-[13px]">VueJS</span>.
+                </p>
 
-                  <p class="text-[13px] text-[#262626] mt-2">
-                    After that, I learned all three. (<span class="text-cyan-500 text-[13px]">React</span> -
-                    <span class="text-red-600 text-[13px]">Angular</span> -
-                    <span class="text-green-600 text-[13px]">Vue</span>)
-                  </p>
-                </div>
-              </Placeholder>
+                <p class="text-[13px] text-[#262626] mt-2">
+                  After that, I learned all three. (<span class="text-cyan-500 text-[13px]">React</span> -
+                  <span class="text-red-600 text-[13px]">Angular</span> -
+                  <span class="text-green-600 text-[13px]">Vue</span>)
+                </p>
+              </div>
             </div>
           </template>
         </UPopover>
