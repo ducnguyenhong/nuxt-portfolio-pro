@@ -1,7 +1,7 @@
 <template>
   <div v-if="showInfo" class="mt-14 p-3.5 pb-3 rounded-md border border-dashed border-[#e6e6e6]">
     <div class="flex items-start justify-between">
-      <div class="flex flex-1 items-center gap-3">
+      <div class="flex flex-1 items-center gap-3 flex-wrap">
         <div
           class="flex items-center text-center justify-center rounded-lg w-9 h-5 bg-gradient-to-r from-[#902ce1] to-[#fe2497] text-white text-[11px] select-none"
         >
