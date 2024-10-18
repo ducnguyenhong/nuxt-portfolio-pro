@@ -20,9 +20,9 @@
     <div class="flex flex-wrap gap-6">
       <div v-for="item in skillList" :key="item.name" class="flex flex-col justify-center items-center gap-1">
         <div
-          class="w-10 h-10 flex justify-center items-center rounded-lg border border-[#f2f2f2] hover:scale-105 duration-300"
+          class="w-10 h-10 flex justify-center items-center rounded-lg border border-[#f2f2f2] hover:scale-105 duration-200"
         >
-          <img :src="item.icon" :alt="item.name" :title="item.name" class="w-6 h-6 object-contain" />
+          <img :src="item.icon" :alt="item.iconAlt" :title="item.name" class="w-6 h-6 object-contain" />
         </div>
 
         <p class="text-center text-[11px] text-[#828282]">{{ item.name }}</p>
@@ -33,7 +33,7 @@
 
 <script setup lang="ts">
 import SectionHome from '~/components/SectionHome.vue';
-import { SKILLS } from '../../utils/const';
+import { SKILLS } from '../../utils/data';
 
 const tabActive = ref('WEBSITE');
 

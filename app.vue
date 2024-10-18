@@ -1,9 +1,6 @@
 <template>
   <div class="w-full relative">
-    <div
-      class="w-full h-[350px] absolute top-0 left-0 z-0"
-      style="background-image: url('/images/background-top.svg')"
-    />
+    <img src="/images/background-top.webp" class="w-full h-[600px] absolute top-0 bg-cover left-0 z-0" />
     <div class="w-full bg-cover bg-no-repeat px-96 pt-8 z-10 relative min-h-[70vh]">
       <Header />
       <NuxtPage />

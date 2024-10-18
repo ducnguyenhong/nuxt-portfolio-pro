@@ -3,7 +3,7 @@
     <div class="flex flex-1 gap-8 items-center">
       <NuxtLink to="/">
         <div class="flex items-center gap-1.5 hover:animate-shake">
-          <img src="/images/logo.png" class="w-6 h-6 object-cover" />
+          <img src="/images/logo.webp" class="w-6 h-6 object-cover" alt="Logo - Nguyễn Hồng Đức Portfolio" />
           <h1 class="text-lg font-bold">Portfolio</h1>
         </div>
       </NuxtLink>

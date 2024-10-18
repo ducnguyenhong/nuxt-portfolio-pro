@@ -8,11 +8,7 @@
           New
         </div>
         <span class="text-[#4A576F] text-sm">This website is using VueJS</span>
-        <img
-          src="https://www.golden-team.org/static/services/vuejs.webp"
-          alt="VueJS"
-          class="w-3.5 h-3.5 object-cover"
-        />
+        <img src="/images/Vue.webp" alt="VueJS - Nguyễn Hồng Đức Portfolio" class="w-3.5 h-3.5 object-cover" />
 
         <UPopover :popper="{ placement: 'right' }">
           <button type="button" class="text-green-600 text-sm underline">Why Vue?</button>

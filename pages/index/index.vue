@@ -4,6 +4,8 @@
   <Skills />
   <Experience />
   <Projects />
+  <FAQ />
+  <Sponsor />
 </template>
 
 <script setup>
@@ -17,8 +19,10 @@ useSeoMeta({
 });
 
 import Experience from './Experience.vue';
+import FAQ from './FAQ.vue';
 import Intro from './Intro.vue';
 import Projects from './Projects.vue';
 import Skills from './Skills.vue';
+import Sponsor from './Sponsor.vue';
 import TechInfo from './TechInfo.vue';
 </script>
