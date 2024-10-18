@@ -61,7 +61,7 @@
       <a
         href="https://nguyenhongduc.net/[Front-End] Nguyễn Hồng Đức.pdf"
         target="_blank"
-        class="items-center flex gap-2 bg-gradient-to-r from-[#902ce1] to-[#fe2497] rounded-xl px-5 py-2.5 hover:from-[#fe2497] hover:to-[#fe2497] duration-300"
+        class="items-center flex gap-2 bg-gradient-to-r from-[#902ce1] to-[#fe2497] rounded-xl px-5 py-2.5 lg:hover:from-[#fe2497] lg:hover:to-[#fe2497] duration-300"
       >
         <UIcon name="i-material-symbols-download-2-rounded" class="w-4 h-4 text-[#FFF]" />
         <span class="text-sm text-[#FFF]">Download CV</span>

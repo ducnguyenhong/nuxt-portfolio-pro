@@ -2,7 +2,7 @@
   <a
     :href="link"
     :target="openInNewTab ? '_blank' : undefined"
-    class="text-purple-800 group hover:text-purple-600 duration-200"
+    class="text-purple-800 group lg:hover:text-purple-600 duration-200"
   >
     {{ content }}
     <UIcon

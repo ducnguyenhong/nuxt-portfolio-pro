@@ -26,8 +26,8 @@ const MENU_LIST = [
     route: '/info'
   },
   {
-    label: 'Product',
-    route: '/product'
+    label: 'Projects',
+    route: '/projects'
   },
   {
     label: 'Tools',

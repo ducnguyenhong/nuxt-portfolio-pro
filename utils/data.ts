@@ -170,59 +170,59 @@ interface Project {
   thumbnail: string;
   logo: string;
   technologies: string[];
-  type: 'Company' | 'Personal';
-  device: string;
+  type: 'Company' | 'Personal' | 'Freelance';
+  device: ('WEB' | 'MOBILE' | 'DESKTOP')[];
   demo?: string;
 }
 
 export const PROJECTS: Project[] = [
   {
     name: 'Stockbook',
-    description: 'ㅤㅤSocial network about stocks',
+    description: 'Social network about stocks',
     demo: 'https://stockbook.vn',
     thumbnail: '/images/StockbookBanner.webp',
     logo: '/images/Stockbook.webp',
     technologies: ['ReactJS', 'ReactNative'],
     type: 'Company',
-    device: 'Website, Mobile'
+    device: ['WEB', 'MOBILE']
   },
   {
     name: 'KMS',
-    description: 'Knowledge Management System (KMS)',
+    description: 'Knowledge management system for stocks',
     thumbnail: '/images/KMSBanner.webp',
     logo: '/images/KMS.webp',
     technologies: ['ReactJS', 'ReactNative'],
     type: 'Company',
-    device: 'Website'
+    device: ['WEB']
   },
   {
     name: 'Homefood',
-    description: 'Homefood',
+    description: 'System for buying and selling health foods',
     demo: 'https://homefood.com.vn',
     thumbnail: '/images/HomefoodBanner.webp',
     logo: '/images/Homefood.webp',
     technologies: ['ReactJS', 'ReactNative'],
     type: 'Company',
-    device: 'Website, Mobile'
+    device: ['WEB', 'MOBILE']
   },
   {
     name: 'Stormik',
-    description: 'Stockbook',
+    description: 'Safe and private web browser',
     demo: 'https://stormik.org',
     thumbnail: '/images/StormikBanner.webp',
     logo: '/images/Stormik.webp',
     technologies: ['ReactJS', 'ReactNative'],
     type: 'Personal',
-    device: 'Website, Mobile, Desktop'
+    device: ['WEB', 'MOBILE', 'DESKTOP']
   },
   {
     name: '84.GO',
-    description: 'Knowledge Management System (KMS)',
+    description: 'Online bus ticket booking system',
     thumbnail: '/images/84GOBanner.webp',
     logo: '/images/84GO.webp',
     technologies: ['ReactJS', 'ReactNative'],
-    type: 'Company',
-    device: 'Website, Mobile'
+    type: 'Freelance',
+    device: ['WEB', 'MOBILE']
   },
   {
     name: 'Homefood2',
@@ -232,7 +232,7 @@ export const PROJECTS: Project[] = [
     thumbnail: 'https://mms.img.susercontent.com/aefee07e2521fb8ced6656deb2ee1818',
     technologies: ['ReactJS', 'ReactNative'],
     type: 'Company',
-    device: 'Website'
+    device: ['WEB']
   }
 ];
 
@@ -242,6 +242,7 @@ interface Timeline {
   description: string;
   workplaceLogo: string;
   technologies: string[];
+  workplaceLink: string;
 }
 
 export const TIMELINES: Timeline[] = [
@@ -250,6 +251,7 @@ export const TIMELINES: Timeline[] = [
     duration: '10/2024 - Now',
     description: 'Participate in developing telecommunications outsourcing projects.',
     workplaceLogo: '/images/FPTSoftware.webp',
+    workplaceLink: 'https://fptsoftware.com',
     technologies: ['HTML', 'CSS', 'Javascript', 'Typescript', 'ReactJS']
   },
   {
@@ -257,21 +259,24 @@ export const TIMELINES: Timeline[] = [
     duration: '01/2022 - 09/2024',
     description: 'Participate in developing support projects for securities users.',
     workplaceLogo: '/images/Vndirect.webp',
-    technologies: ['HTML', 'CSS', 'Javascript', 'Typescript', 'ReactJS']
+    technologies: ['HTML', 'CSS', 'Javascript', 'Typescript', 'ReactJS'],
+    workplaceLink: 'https://www.vndirect.com.vn'
   },
   {
     workplace: 'Egroup',
     duration: '06/2020 - 12/2021',
     description: 'Participate in developing an online English teaching website system.',
     workplaceLogo: '/images/Egroup.webp',
-    technologies: ['HTML', 'CSS', 'Javascript', 'Typescript', 'ReactJS']
+    technologies: ['HTML', 'CSS', 'Javascript', 'Typescript', 'ReactJS'],
+    workplaceLink: 'https://egroup.vn'
   },
   {
     workplace: 'University of Transport and Communications',
     duration: '09/2017 - 06/2021',
     description: 'Studied and graduated in 2021 (IT Engineer).',
     workplaceLogo: '/images/UTC.webp',
-    technologies: ['HTML', 'CSS', 'Javascript', 'Typescript', 'ReactJS']
+    technologies: ['HTML', 'CSS', 'Javascript', 'Typescript', 'ReactJS'],
+    workplaceLink: 'https://www.utc.edu.vn'
   }
 ];
 
@@ -282,14 +287,28 @@ interface Faq {
 
 export const FAQS: Faq[] = [
   {
-    label: 'Use this template portfolio?',
+    label: 'How to contact me?',
     content:
-      'Yes, you can use this template portfolio as a starting point for your own website. This is github: https:// Yes, you can use this template portfolio as a starting point for your own website. This is github: https://'
+      'At the top of the website, I have provided information about my Facebook and LinkedIn, and you can connect with me through those platforms. You can also connect with me on Zalo at the phone number 0389755202.'
   },
   {
-    label: 'Connect with me?',
+    label: 'See all of projects',
     content:
-      'Yes, you can use this template portfolio as a starting point for your own website. This is github: https://'
+      'In the header of the website, you can find the "Projects" section. Click on that to view all of my projects. If you want more details, you can click on a specific project.'
+  },
+  {
+    label: 'Need more personal information',
+    content: 'In the header of the website, click on the "Info" section to view additional information.'
+  },
+  {
+    label: 'Use this portfolio template',
+    content:
+      'Sure, I have made the source code public. You can view it here: https://github.com/ducnguyenhong/nuxt-portfolio-pro'
+  },
+  {
+    label: 'Become a Sponsor',
+    content:
+      'I would be very happy about that! Please contact me using the information provided at the top of the website.'
   }
 ];
 

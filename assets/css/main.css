@@ -40,3 +40,38 @@ body {
 }
 
 /* end header  */
+
+/* skill */
+@keyframes zoomInSkill {
+  from {
+    transform: scale(0.7);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.zoom-in-skill {
+  animation: zoomInSkill 0.5s ease-in-out forwards;
+}
+/* end skill */
+
+/* sponsor  */
+@keyframes slideSponsor {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-20px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.animate-slide-sponsor {
+  animation: slideSponsor 8s ease-in-out infinite;
+}
+/* end sponsor  */

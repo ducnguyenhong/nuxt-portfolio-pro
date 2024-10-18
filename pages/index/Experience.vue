@@ -10,7 +10,7 @@
             <img :src="item.workplaceLogo" class="w-6 h-6 object-contain" />
           </div>
           <div class="flex flex-col flex-1 gap-2">
-            <p class="font-bold">{{ item.workplace }}</p>
+            <CompanyLink :content="item.workplace" :link="item.workplaceLink" />
             <p class="text-xs text-[#b6b6b6]">{{ item.duration }}</p>
             <p class="text-sm text-[#828282]">{{ item.description }}</p>
           </div>
@@ -21,6 +21,7 @@
 </template>
 
 <script setup lang="ts">
+import CompanyLink from '~/components/CompanyLink.vue';
 import SectionHome from '~/components/SectionHome.vue';
 import { TIMELINES } from '~/utils/data';
 </script>

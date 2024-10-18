@@ -4,14 +4,35 @@
   </div>
 
   <div>
-    <div class="grid grid-cols-3 gap-x-7 gap-y-5">
-      <div v-for="item in PROJECTS" :key="item.name">
-        <img :src="item.thumbnail" class="w-full h-40 object-cover rounded-lg border border-[#e6e6e6]" />
-        <div class="flex items-center gap-1.5 mt-2">
-          <img :src="item.logo" class="h-5 w-5 rounded-full object-contain" />
-          <p class="font-semibold">{{ item.name }}</p>
+    <div class="grid grid-cols-2 lg:grid-cols-3 gap-x-5 lg:gap-x-7 gap-y-5">
+      <div v-for="item in PROJECTS" :key="item.name" class="relative">
+        <p
+          :class="[
+            'absolute top-2 left-2 text-[11px] px-1.5 py-0.5 text-white rounded-md z-10 bg-gradient-to-r',
+            getBgColorType(item.type)
+          ]"
+        >
+          {{ item.type }}
+        </p>
+        <NuxtLink to="/">
+          <div class="w-full h-40 overflow-hidden rounded-lg border border-[#e6e6e6]">
+            <img :src="item.thumbnail" class="w-full h-40 object-cover lg:hover:scale-110 duration-200" />
+          </div>
+        </NuxtLink>
+        <NuxtLink to="/">
+          <div class="flex items-center gap-1.5 mt-2">
+            <img :src="item.logo" class="h-5 w-5 rounded-full object-contain" />
+            <p class="font-semibold">{{ item.name }}</p>
+          </div>
+        </NuxtLink>
+        <p class="text-[#828282] mt-0.5 text-[13px] italic font-light">{{ item.description }}</p>
+
+        <div class="flex items-center gap-2 mt-0.5">
+          <p class="text-[#070707] text-[13px]">Platform:</p>
+          <div v-for="d in item.device" :key="d" :title="d" class="mt-1">
+            <UIcon :name="getDeviceIcon(d)" class="w-4 h-4 text-[#828282]" />
+          </div>
         </div>
-        <p class="text-[#828282] mt-0.5 text-[13px]">{{ item.description }}</p>
       </div>
     </div>
   </div>
@@ -20,4 +41,30 @@
 <script setup lang="ts">
 import SectionHome from '~/components/SectionHome.vue';
 import { PROJECTS } from '~/utils/data';
+
+const getBgColorType = (type: string) => {
+  if (type === 'Company') {
+    return 'from-[#278036] to-[#57b366]';
+  }
+  if (type === 'Personal') {
+    return 'from-[#752783] to-[#b763c6]';
+  }
+  if (type === 'Freelance') {
+    return 'from-[#273480] to-[#505fb5]';
+  }
+  return '';
+};
+
+const getDeviceIcon = (device: 'WEB' | 'MOBILE' | 'DESKTOP') => {
+  if (device === 'WEB') {
+    return 'i-material-symbols-globe';
+  }
+  if (device === 'MOBILE') {
+    return 'i-material-symbols-light-phone-android-rounded';
+  }
+  if (device === 'DESKTOP') {
+    return 'i-mdi-laptop-mac';
+  }
+  return '';
+};
 </script>

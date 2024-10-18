@@ -10,7 +10,7 @@
         <span class="text-[#4A576F] text-sm">This website is using VueJS</span>
         <img src="/images/Vue.webp" alt="VueJS - Nguyễn Hồng Đức Portfolio" class="w-3.5 h-3.5 object-cover" />
 
-        <UPopover :popper="{ placement: 'right' }">
+        <UPopover :popper="{ placement: 'auto-end' }">
           <button type="button" class="text-green-600 text-sm underline">Why Vue?</button>
 
           <template #panel>
@@ -37,10 +37,15 @@
       </div>
 
       <div>
-        <button type="button" title="Hide" @click="setShowInfo(false)">
+        <button
+          type="button"
+          title="Hide"
+          @click="setShowInfo(false)"
+          class="relative -top-2.5 -right-3 md:-top-0 md:-right-0"
+        >
           <UIcon
             name="i-material-symbols-light-close-rounded"
-            class="w-5 h-5 text-gray-400 hover:text-gray-500 duration-w00"
+            class="w-5 h-5 text-gray-400 lg:hover:text-gray-500 duration-w00"
           />
         </button>
       </div>
