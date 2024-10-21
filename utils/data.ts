@@ -250,7 +250,7 @@ interface Sponsor {
 export const SPONSOR_LIST: Sponsor[] = [
   {
     name: 'Stormik',
-    logo: '/images/Stormik.webp',
+    logo: '/images/projects/stormik/logo.webp',
     link: 'https://stormik.org',
     height: 'h-8'
   },

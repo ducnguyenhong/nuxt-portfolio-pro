@@ -3,7 +3,7 @@
     <div class="w-full relative">
       <img src="/images/background-top.webp" class="w-full h-[600px] absolute top-0 bg-cover left-0 z-0" />
       <div
-        class="w-full bg-cover bg-no-repeat px-5 md:px-8 lg:px-96 2xl:px-[450px] pt-4 md:pt-8 z-10 relative min-h-[80vh]"
+        class="w-[92%] md:[w-95%] lg:[w-50%] xl:w-[650px] 2xl:w-[650px] mx-auto bg-cover bg-no-repeat pt-4 md:pt-8 z-10 relative min-h-[80vh]"
       >
         <Header />
         <NuxtPage />
