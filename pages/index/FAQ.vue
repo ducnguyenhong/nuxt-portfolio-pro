@@ -11,7 +11,7 @@
             class="border-b border-gray-200 dark:border-gray-700 px-0"
             :ui="{ rounded: 'rounded-none' }"
           >
-            <p class="text-[15px] font-semibold text-[#070707] py-2">{{ item.label }}</p>
+            <p class="text-[15px] font-semibold text-[#070707] dark:text-[#ccc] py-2">{{ item.label }}</p>
 
             <template #trailing>
               <UIcon

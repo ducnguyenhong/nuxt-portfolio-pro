@@ -1,5 +1,5 @@
 <template>
-  <div v-if="showInfo" class="mt-14 p-3.5 pb-3 rounded-md border border-dashed border-[#e6e6e6]">
+  <div v-if="showInfo" class="mt-14 p-3.5 pb-3 rounded-md border border-dashed border-[#e6e6e6] dark:border-[#828282]">
     <div class="flex items-start justify-between">
       <div class="flex flex-1 items-center gap-x-3 gap-y-2 flex-wrap">
         <div
@@ -7,7 +7,7 @@
         >
           New
         </div>
-        <span class="text-[#4A576F] text-sm">This website is using VueJS</span>
+        <span class="text-[#4A576F] text-sm dark:text-[#ccc]">This website is using VueJS</span>
         <img src="/images/Vue.webp" alt="VueJS - Nguyễn Hồng Đức Portfolio" class="w-3.5 h-3.5 object-cover" />
 
         <UPopover :popper="{ placement: 'auto-end' }">
@@ -16,14 +16,14 @@
           <template #panel>
             <div class="px-4 py-3">
               <div class="w-96">
-                <p class="text-[13px] text-[#262626]">
+                <p class="text-[13px] text-[#262626] dark:text-[#e6e6e6]">
                   😁 Haha, I used to only learn and work with
                   <span class="text-cyan-500 text-[13px]">ReactJS</span> until I was rejected for a high-paying job that
                   required knowledge of both <span class="text-cyan-500 text-[13px]">ReactJS</span> and
                   <span class="text-green-600 text-[13px]">VueJS</span>.
                 </p>
 
-                <p class="text-[13px] text-[#262626] mt-2">
+                <p class="text-[13px] text-[#262626] mt-2 dark:text-[#e6e6e6]">
                   After that, I learned all three. (<span class="text-cyan-500 text-[13px]">React</span> -
                   <span class="text-red-600 text-[13px]">Angular</span> -
                   <span class="text-green-600 text-[13px]">Vue</span>)

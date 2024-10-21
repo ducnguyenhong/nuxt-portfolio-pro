@@ -12,7 +12,7 @@
           <div class="flex flex-col flex-1 gap-2">
             <CompanyLink :content="item.workplace" :link="item.workplaceLink" />
             <p class="text-xs text-[#b6b6b6]">{{ item.duration }}</p>
-            <p class="text-sm text-[#828282]">{{ item.description }}</p>
+            <p class="text-sm text-[#828282] dark:text-[#b6b6b6]">{{ item.description }}</p>
           </div>
         </div>
       </div>

@@ -4,7 +4,7 @@
 
     <div class="mt-20">
       <div class="mt-16">
-        <div v-html="htmlContent" class="nuxt-html-content" />
+        <div v-html="htmlContent" class="nuxt-html-content dark:text-[#ccc]" />
         <div class="mt-10" v-if="!!demoImages.length">
           <ImageSlider :images="demoImages" />
         </div>

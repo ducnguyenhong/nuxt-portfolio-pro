@@ -3,7 +3,7 @@
     <li v-for="item in MENU_LIST" :key="item.route">
       <NuxtLink :to="item.route">
         <div class="group flex flex-col items-center mt-[3px]">
-          <p class="font-medium">
+          <p class="font-medium dark:text-[#e6e6e6]">
             {{ item.label }}
           </p>
           <div

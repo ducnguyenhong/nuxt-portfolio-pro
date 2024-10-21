@@ -17,7 +17,7 @@
           <div class="border-b relative border-purple-300">
             <p
               :class="[
-                'text-[12px] text-[#a6a6a6] tracking-[0.5px] px-3 md:px-8 relative top-4',
+                'text-[12px] text-[#a6a6a6] dark:text-[#b9b9b9] tracking-[0.5px] px-3 md:px-8 relative top-4',
                 index % 2 === 0 ? 'text-right' : undefined
               ]"
             >
@@ -33,7 +33,7 @@
               >
                 <UIcon name="i-material-symbols-content-copy-outline-rounded" class="w-4 h-4 text-[#828282]" />
               </button>
-              <p class="font-semibold text-[15px] text-[#4f4f4f] break-all md:break-normal">
+              <p class="font-semibold text-[15px] text-[#4f4f4f] dark:text-[#ccc] break-all md:break-normal">
                 {{ item.value }}
               </p>
               <button

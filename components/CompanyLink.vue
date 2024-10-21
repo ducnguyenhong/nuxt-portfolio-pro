@@ -1,5 +1,9 @@
 <template>
-  <a :href="link" target="_blank" class="font-bold group lg:hover:text-purple-600 duration-200 block w-fit">
+  <a
+    :href="link"
+    target="_blank"
+    class="font-bold dark:text-[#ccc] group lg:hover:text-purple-600 duration-200 block w-fit"
+  >
     {{ content }}
     <UIcon
       name="i-material-symbols-arrow-outward-rounded"

@@ -9,7 +9,9 @@
           @click="setTabActive(item.value)"
           :class="[
             'border-b text-[16px] whitespace-nowrap',
-            item.value === tabActive ? 'border-purple-800 text-purple-800 font-semibold' : 'border-white'
+            item.value === tabActive
+              ? 'border-purple-800 text-purple-800 font-semibold'
+              : 'border-white dark:border-[#121114] dark:text-[#ccc]'
           ]"
         >
           {{ item.title }}
@@ -24,12 +26,12 @@
         class="zoom-in-skill flex flex-col justify-center items-center gap-1"
       >
         <div
-          class="w-10 h-10 flex justify-center items-center rounded-lg border border-[#f2f2f2] lg:hover:scale-105 duration-200"
+          class="w-10 h-10 flex justify-center items-center rounded-lg border border-[#f2f2f2] dark:bg-[#4f4f4f] dark:border-[#828282] lg:hover:scale-105 duration-200"
         >
           <img :src="item.icon" :alt="item.iconAlt" :title="item.name" class="w-6 h-6 object-contain" />
         </div>
 
-        <p class="text-center text-[11px] text-[#828282]">{{ item.name }}</p>
+        <p class="text-center text-[11px] text-[#828282] dark:text-[#ccc]">{{ item.name }}</p>
       </div>
     </div>
   </div>

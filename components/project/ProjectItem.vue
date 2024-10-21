@@ -14,13 +14,13 @@
   </NuxtLink>
   <NuxtLink :to="`/projects/${item.id}`">
     <div class="flex items-center gap-1.5 mt-2">
-      <p class="font-semibold">{{ item.name }}</p>
+      <p class="font-semibold dark:text-[#ccc]">{{ item.name }}</p>
     </div>
   </NuxtLink>
   <p class="text-[#828282] mt-0.5 text-[13px] font-light">{{ item.description }}</p>
 
   <div class="flex items-center gap-2 mt-0.5">
-    <p class="text-[#070707] text-[13px]">Platform:</p>
+    <p class="text-[#070707] text-[13px] dark:text-[#828282]">Platform:</p>
     <div v-for="d in item.platform" :key="d" :title="d" class="mt-1">
       <UIcon :name="getDeviceIcon(d)" class="w-4 h-4 text-[#828282]" />
     </div>
