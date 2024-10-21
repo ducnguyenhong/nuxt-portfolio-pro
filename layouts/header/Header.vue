@@ -50,7 +50,7 @@
 
       <UPopover :popper="{ placement: 'top-end' }">
         <button type="button" title="Menu" class="md:hidden">
-          <UIcon name="i-solar-hamburger-menu-linear" class="w-6 h-6 text-[#262626]" />
+          <UIcon name="i-solar-hamburger-menu-linear" class="w-6 h-6 text-[#262626] dark:text-[#b9b9b9]" />
         </button>
 
         <template #panel>

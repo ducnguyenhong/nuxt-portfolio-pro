@@ -8,8 +8,8 @@
     {{ item.type }}
   </p>
   <NuxtLink :to="`/projects/${item.id}`">
-    <div class="w-full h-48 overflow-hidden rounded-lg border border-[#e6e6e6]">
-      <img :src="item.thumbnail" class="w-full h-48 object-cover lg:hover:scale-110 duration-200" />
+    <div class="w-full h-32 md:h-48 overflow-hidden rounded-lg border border-[#e6e6e6]">
+      <img :src="item.thumbnail" class="w-full h-32 md:h-48 object-cover lg:hover:scale-110 duration-200" />
     </div>
   </NuxtLink>
   <NuxtLink :to="`/projects/${item.id}`">
