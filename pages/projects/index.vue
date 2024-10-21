@@ -12,19 +12,7 @@
         </USelectMenu>
       </div>
 
-      <div v-if="isLoading">
-        <ProjectLoading :num-of-items="6" />
-      </div>
-
-      <div v-if="error" class="mt-16">
-        <ErrorScreen />
-      </div>
-
-      <div v-if="projectList.length === 0" class="mt-16">
-        <EmptyScreen />
-      </div>
-
-      <div v-else class="mt-16 grid grid-cols-2 lg:grid-cols-3 gap-x-5 lg:gap-x-7 gap-y-5">
+      <div class="mt-16 grid grid-cols-2 lg:grid-cols-2 gap-x-5 lg:gap-x-7 gap-y-7">
         <div v-for="item in projectList" :key="item.id" class="relative">
           <ProjectItem :item="item" />
         </div>
@@ -43,21 +31,13 @@ useSeoMeta({
   twitterCard: 'summary_large_image'
 });
 
-import { EmptyScreen, ErrorScreen } from '~/components/effect-screen';
-import { ProjectLoading } from '~/components/project';
 import SectionPage from '~/components/SectionPage.vue';
-import type { Project } from '~/types/project.type';
+import { PROJECT_LIST } from '~/utils/data-project';
 
 const technologies = ['ReactJS', 'Angular', 'VueJS', 'NextJS', 'NuxtJS', 'Typescript', 'React Native', 'ElectronJS'];
 const selected = ref([]);
 
-const { apiDataCenter } = useRuntimeConfig().public;
-const { data, status, error, refresh } = await useFetch<Project[]>(`${apiDataCenter}/api/projects`, {
-  // query: { param1, param2: 'value2' }
-});
-
-const isLoading = !status.value;
-const projectList = computed(() => data.value || []);
+const projectList = PROJECT_LIST;
 
 watch(selected, async (newValue) => {
   await nextTick();

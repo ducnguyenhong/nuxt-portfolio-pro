@@ -1,6 +1,6 @@
 <template>
   <div class="mt-16">
-    <SectionHome title="Skills" />
+    <SectionHome title="Skill" />
 
     <div class="flex items-center gap-6 mb-6 overflow-x-auto">
       <div v-for="item in TABS" :key="item.title">

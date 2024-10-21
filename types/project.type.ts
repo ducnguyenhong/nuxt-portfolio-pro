@@ -15,4 +15,6 @@ export interface Project {
   type: ProjectType;
   platform: ProjectPlatform[];
   demo?: string;
+  demoImages?: string[];
+  isTop?: boolean;
 }

@@ -1,6 +1,6 @@
 <template>
   <div class="mt-16">
-    <SectionHome title="Experiences" />
+    <SectionHome title="Experience" />
 
     <div>
       <div class="flex flex-col gap-8">

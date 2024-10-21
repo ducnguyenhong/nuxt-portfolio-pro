@@ -1,5 +1,3 @@
-import type { Project } from '~/types/project.type';
-
 interface Skill {
   name: string;
   icon: string;
@@ -163,67 +161,6 @@ export const SKILLS: Skill[] = [
     icon: '/images/AgileScrum.webp',
     type: ['OTHER'],
     iconAlt: 'Agile Scrum - Nguyễn Hồng Đức Portfolio'
-  }
-];
-
-export const PROJECTS: Project[] = [
-  {
-    name: 'Stockbook',
-    description: 'Social network about stocks',
-    demo: 'https://stockbook.vn',
-    thumbnail: '/images/StockbookBanner.webp',
-    logo: '/images/Stockbook.webp',
-    technologies: ['ReactJS', 'ReactNative'],
-    type: 'Company',
-    device: ['WEB', 'MOBILE']
-  },
-  {
-    name: 'KMS',
-    description: 'Knowledge management system for stocks',
-    thumbnail: '/images/KMSBanner.webp',
-    logo: '/images/KMS.webp',
-    technologies: ['ReactJS', 'ReactNative'],
-    type: 'Company',
-    device: ['WEB']
-  },
-  {
-    name: 'Homefood',
-    description: 'System for buying and selling health foods',
-    demo: 'https://homefood.com.vn',
-    thumbnail: '/images/HomefoodBanner.webp',
-    logo: '/images/Homefood.webp',
-    technologies: ['ReactJS', 'ReactNative'],
-    type: 'Company',
-    device: ['WEB', 'MOBILE']
-  },
-  {
-    name: 'Stormik',
-    description: 'Safe and private web browser',
-    demo: 'https://stormik.org',
-    thumbnail: '/images/StormikBanner.webp',
-    logo: '/images/Stormik.webp',
-    technologies: ['ReactJS', 'ReactNative'],
-    type: 'Personal',
-    device: ['WEB', 'MOBILE', 'DESKTOP']
-  },
-  {
-    name: '84.GO',
-    description: 'Online bus ticket booking system',
-    thumbnail: '/images/84GOBanner.webp',
-    logo: '/images/84GO.webp',
-    technologies: ['ReactJS', 'ReactNative'],
-    type: 'Freelance',
-    device: ['WEB', 'MOBILE']
-  },
-  {
-    name: 'Homefood2',
-    logo: '/images/84GO.webp',
-    description: 'Homefood',
-    demo: 'https://homefood.com.vn',
-    thumbnail: 'https://mms.img.susercontent.com/aefee07e2521fb8ced6656deb2ee1818',
-    technologies: ['ReactJS', 'ReactNative'],
-    type: 'Company',
-    device: ['WEB']
   }
 ];
 

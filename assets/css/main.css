@@ -14,6 +14,18 @@ body {
   box-sizing: border-box;
 }
 
+.nuxt-html-content div,
+.nuxt-html-content li,
+.nuxt-html-content a,
+.nuxt-html-content strong,
+.nuxt-html-content b,
+.nuxt-html-content p,
+.nuxt-html-content i,
+.nuxt-html-content span,
+.nuxt-html-content em {
+  font-size: 14px !important;
+}
+
 /* header  */
 @keyframes shake {
   0% {

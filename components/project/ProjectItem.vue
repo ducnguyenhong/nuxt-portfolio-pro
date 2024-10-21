@@ -7,21 +7,17 @@
   >
     {{ item.type }}
   </p>
-  <NuxtLink to="/">
-    <div class="w-full h-40 overflow-hidden rounded-lg border border-[#e6e6e6]">
-      <img
-        :src="`${apiDataCenter}${item.thumbnail}`"
-        class="w-full h-40 object-cover lg:hover:scale-110 duration-200"
-      />
+  <NuxtLink :to="`/projects/${item.id}`">
+    <div class="w-full h-48 overflow-hidden rounded-lg border border-[#e6e6e6]">
+      <img :src="item.thumbnail" class="w-full h-48 object-cover lg:hover:scale-110 duration-200" />
     </div>
   </NuxtLink>
-  <NuxtLink to="/">
+  <NuxtLink :to="`/projects/${item.id}`">
     <div class="flex items-center gap-1.5 mt-2">
-      <img :src="`${apiDataCenter}${item.logo}`" class="h-5 w-5 rounded-full object-contain" />
       <p class="font-semibold">{{ item.name }}</p>
     </div>
   </NuxtLink>
-  <p class="text-[#828282] mt-0.5 text-[13px] italic font-light">{{ item.description }}</p>
+  <p class="text-[#828282] mt-0.5 text-[13px] font-light">{{ item.description }}</p>
 
   <div class="flex items-center gap-2 mt-0.5">
     <p class="text-[#070707] text-[13px]">Platform:</p>
@@ -59,8 +55,6 @@ const getDeviceIcon = (device: 'WEBSITE' | 'MOBILE' | 'DESKTOP') => {
   }
   return '';
 };
-
-const { apiDataCenter } = useRuntimeConfig().public;
 
 const props = defineProps<{ item: Project }>();
 
