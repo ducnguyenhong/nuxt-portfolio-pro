@@ -9,5 +9,10 @@ export default defineNuxtConfig({
     },
     display: 'swap'
   },
-  css: ['~/assets/css/main.css']
+  css: ['~/assets/css/main.css'],
+  runtimeConfig: {
+    public: {
+      apiDataCenter: process.env.API_DATA_CENTER
+    }
+  }
 });

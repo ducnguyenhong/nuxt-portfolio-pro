@@ -1,6 +1,6 @@
 <template>
   <div class="mt-16">
-    <SectionHome title="Projects" />
+    <SectionHome title="Top Projects" />
   </div>
 
   <div>
@@ -13,7 +13,7 @@
 </template>
 
 <script setup lang="ts">
-import ProjectItem from '~/components/ProjectItem.vue';
+import { ProjectItem } from '~/components/project';
 import SectionHome from '~/components/SectionHome.vue';
 import { PROJECTS } from '~/utils/data';
 </script>

@@ -9,12 +9,15 @@
   </p>
   <NuxtLink to="/">
     <div class="w-full h-40 overflow-hidden rounded-lg border border-[#e6e6e6]">
-      <img :src="item.thumbnail" class="w-full h-40 object-cover lg:hover:scale-110 duration-200" />
+      <img
+        :src="`${apiDataCenter}${item.thumbnail}`"
+        class="w-full h-40 object-cover lg:hover:scale-110 duration-200"
+      />
     </div>
   </NuxtLink>
   <NuxtLink to="/">
     <div class="flex items-center gap-1.5 mt-2">
-      <img :src="item.logo" class="h-5 w-5 rounded-full object-contain" />
+      <img :src="`${apiDataCenter}${item.logo}`" class="h-5 w-5 rounded-full object-contain" />
       <p class="font-semibold">{{ item.name }}</p>
     </div>
   </NuxtLink>
@@ -22,14 +25,14 @@
 
   <div class="flex items-center gap-2 mt-0.5">
     <p class="text-[#070707] text-[13px]">Platform:</p>
-    <div v-for="d in item.device" :key="d" :title="d" class="mt-1">
+    <div v-for="d in item.platform" :key="d" :title="d" class="mt-1">
       <UIcon :name="getDeviceIcon(d)" class="w-4 h-4 text-[#828282]" />
     </div>
   </div>
 </template>
 
-<script lang="ts">
-import type { Project } from '~/utils/data';
+<script lang="ts" setup>
+import type { Project } from '~/types/project.type';
 
 const getBgColorType = (type: string) => {
   if (type === 'Company') {
@@ -44,8 +47,8 @@ const getBgColorType = (type: string) => {
   return '';
 };
 
-const getDeviceIcon = (device: 'WEB' | 'MOBILE' | 'DESKTOP') => {
-  if (device === 'WEB') {
+const getDeviceIcon = (device: 'WEBSITE' | 'MOBILE' | 'DESKTOP') => {
+  if (device === 'WEBSITE') {
     return 'i-material-symbols-globe';
   }
   if (device === 'MOBILE') {
@@ -57,17 +60,9 @@ const getDeviceIcon = (device: 'WEB' | 'MOBILE' | 'DESKTOP') => {
   return '';
 };
 
-export default {
-  name: 'ProjectItem',
-  props: {
-    item: {
-      type: Object as PropType<Project>,
-      required: true
-    }
-  },
-  methods: {
-    getBgColorType,
-    getDeviceIcon
-  }
-};
+const { apiDataCenter } = useRuntimeConfig().public;
+
+const props = defineProps<{ item: Project }>();
+
+const { item } = props;
 </script>

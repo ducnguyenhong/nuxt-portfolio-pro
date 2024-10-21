@@ -1,3 +1,5 @@
+import type { Project } from '~/types/project.type';
+
 interface Skill {
   name: string;
   icon: string;
@@ -163,17 +165,6 @@ export const SKILLS: Skill[] = [
     iconAlt: 'Agile Scrum - Nguyễn Hồng Đức Portfolio'
   }
 ];
-
-export interface Project {
-  name: string;
-  description: string;
-  thumbnail: string;
-  logo: string;
-  technologies: string[];
-  type: 'Company' | 'Personal' | 'Freelance';
-  device: ('WEB' | 'MOBILE' | 'DESKTOP')[];
-  demo?: string;
-}
 
 export const PROJECTS: Project[] = [
   {
