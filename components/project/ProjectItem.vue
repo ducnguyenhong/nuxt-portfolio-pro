@@ -9,7 +9,7 @@
   </p>
   <NuxtLink :to="`/projects/${item.id}`">
     <div class="w-full h-32 md:h-48 overflow-hidden rounded-lg border border-[#e6e6e6]">
-      <img :src="item.thumbnail" class="w-full h-32 md:h-48 object-cover lg:hover:scale-110 duration-200" />
+      <NuxtImg :src="item.thumbnail" class="w-full h-32 md:h-48 object-cover lg:hover:scale-110 duration-200" />
     </div>
   </NuxtLink>
   <NuxtLink :to="`/projects/${item.id}`">
@@ -17,12 +17,19 @@
       <p class="font-semibold dark:text-[#ccc]">{{ item.name }}</p>
     </div>
   </NuxtLink>
-  <p class="text-[#828282] mt-0.5 text-[13px] font-light">{{ item.description }}</p>
+  <!-- <p class="text-[#828282] mt-0.5 text-[13px] font-light">{{ item.description }}</p> -->
 
   <div class="flex items-center gap-2 mt-0.5">
     <p class="text-[#070707] text-[13px] dark:text-[#828282]">Platform:</p>
     <div v-for="d in item.platform" :key="d" :title="d" class="mt-1">
       <UIcon :name="getDeviceIcon(d)" class="w-4 h-4 text-[#828282]" />
+    </div>
+  </div>
+
+  <div class="flex items-center gap-2 mt-0.5">
+    <p class="text-[#070707] text-[13px] dark:text-[#828282]">Tech:</p>
+    <div v-for="t in item.technologies" :key="t" :title="t" class="gap-1">
+      <NuxtImg :src="`/images/${t.replace(' ', '')}.webp`" class="w-4 h-4 object-cover" :alt="t" :title="t" />
     </div>
   </div>
 </template>

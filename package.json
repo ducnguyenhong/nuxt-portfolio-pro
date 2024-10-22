@@ -2,6 +2,11 @@
   "name": "profile",
   "private": true,
   "type": "module",
+  "author": {
+    "name": "Nguyễn Hồng Đức",
+    "email": "nguyenhongduc.work@gmail.com",
+    "url": "https://nguyenhongduc.net"
+  },
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev -p 4000",
@@ -10,10 +15,12 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
+    "@nuxt/image": "^1.8.1",
     "@nuxt/ui": "^2.18.7",
     "@nuxtjs/google-fonts": "^3.2.0",
+    "@nuxtjs/robots": "^4.1.9",
+    "@nuxtjs/sitemap": "^6.1.2",
     "@pinia/nuxt": "^0.5.5",
-    "isomorphic-dompurify": "^2.16.0",
     "lodash": "^4.17.21",
     "nuxt": "^3.13.0",
     "pinia": "^2.2.4",

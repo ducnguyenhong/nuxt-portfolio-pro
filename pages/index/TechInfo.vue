@@ -8,7 +8,7 @@
           New
         </div>
         <span class="text-[#4A576F] text-sm dark:text-[#ccc]">This website is using VueJS</span>
-        <img src="/images/Vue.webp" alt="VueJS - Nguyễn Hồng Đức Portfolio" class="w-3.5 h-3.5 object-cover" />
+        <NuxtImg src="/images/Vue.webp" alt="VueJS - Nguyễn Hồng Đức Portfolio" class="w-3.5 h-3.5 object-cover" />
 
         <UPopover :popper="{ placement: 'auto-end' }">
           <button type="button" class="text-green-600 text-sm underline">Why Vue?</button>

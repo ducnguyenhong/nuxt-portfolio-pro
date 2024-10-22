@@ -1,7 +1,7 @@
 <template>
   <div class="mt-10">
     <div class="flex items-center gap-4">
-      <img src="/images/avatar.jpg" class="w-20 h-20 rounded-full object-cover" alt="Nguyễn Hồng Đức" />
+      <NuxtImg src="/images/avatar.jpg" class="w-20 h-20 rounded-full object-cover" alt="Nguyễn Hồng Đức" />
 
       <div>
         <div class="flex items-center gap-3">
