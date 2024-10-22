@@ -61,14 +61,14 @@
     </div>
 
     <div class="flex justify-center mt-20 mb-16">
-      <a
-        href="https://nguyenhongduc.net/[Front-End] Nguyễn Hồng Đức.pdf"
+      <NuxtLink
+        to="/Nguyen-Hong-Duc-CV.pdf"
         target="_blank"
         class="items-center flex gap-2 bg-gradient-to-r from-[#902ce1] to-[#fe2497] rounded-xl px-5 py-2.5 lg:hover:from-[#fe2497] lg:hover:to-[#fe2497] duration-300"
       >
         <UIcon name="i-material-symbols-download-2-rounded" class="w-4 h-4 text-[#FFF]" />
         <span class="text-sm text-[#FFF]">Download CV</span>
-      </a>
+      </NuxtLink>
     </div>
   </div>
 </template>
