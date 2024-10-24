@@ -13,7 +13,7 @@
 
     <div class="mt-6">
       <p class="text-[#22242C] dark:text-[#ccc]">
-        Hi, I am a frontend developer with over 4 years of experience. As a curious learner, I aspire to develop and
+        Hi, I am a frontend developer with over 4.5 years of experience. As a curious learner, I aspire to develop and
         contribute my skills in a professional environment.
       </p>
       <p class="text-[#22242C] mt-4 dark:text-[#ccc]">
