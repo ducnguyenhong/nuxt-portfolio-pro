@@ -39,8 +39,9 @@ export default [
       'no-undef': 'off',
       'vue/singleline-html-element-content-newline': 'off',
       'vue/attributes-order': 'off',
-      'vue/no-unused-vars': 'warn',
-      '@typescript-eslint/no-empty-object-type': 'off'
+      'vue/no-unused-vars': 'off',
+      '@typescript-eslint/no-empty-object-type': 'off',
+      'vue/no-v-html': 'off'
     }
   },
   {
@@ -48,6 +49,6 @@ export default [
     rules: {}
   },
   {
-    ignores: ['.nuxt/*']
+    ignores: ['.nuxt/*', '.output/*']
   }
 ];
