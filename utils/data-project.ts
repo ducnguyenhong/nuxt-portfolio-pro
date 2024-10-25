@@ -18,7 +18,7 @@ export const PROJECT_LIST: Project[] = [
       '/images/projects/stockbook/demo-1.webp',
       '/images/projects/stockbook/demo-2.webp'
     ],
-    content: `<div><strong>Project name:</strong></div><div>Stockbook stock market social network</div><div><strong><br></strong></div><div><strong>Description:</strong></div><div>Stockbook is a social networking platform specifically designed for stock market investors to connect, share insights, and exchange their perspectives on the market.<br></div><div><br></div><div><strong>Technologies:</strong></div><div>- Website: ReactJS, Recoil, React Query, ChakraUI</div><div>- Mobile app: React Native, Recoil, React Query</div><div><br></div><div><strong>Responsibilities:</strong></div><div>- Set up the project's codebase, develop main functions of the project (Key member)</div><div>- Build client website, admin website</div><div>- Develop and deploy mobile app to Google Play and App Store</div><div><br></div><div><strong>Project demo link:</strong></div><div>- Website:<a href="https://stockbook.vn" target="_blank"><span style="color: rgb(153, 0, 133)">&nbsp;</span><span style="color: rgb(102, 0, 255)">Here</span></a><br>- Google Play:&nbsp;<a target="_blank" href="https://play.google.com/store/apps/details?id=vn.com.vndirect.cudau"><span style="color: rgb(102, 0, 255)">Here</span></a>​</div><div>- App Store:&nbsp;<a target="_blank" href="https://apps.apple.com/vn/app/stockbook/id1221215976"><span style="color: rgb(102, 0, 255)">Here</span></a>​</div>`
+    content: `<div><strong>Project name:</strong></div><div>Stockbook stock market social network</div><div><strong><br></strong></div><div><strong>Description:</strong></div><div>Stockbook is a social networking platform specifically designed for stock market investors to connect, share insights, and exchange their perspectives on the market.<br></div><div><br></div><div><strong>Technologies:</strong></div><div>- Website: ReactJS, Recoil, React Query, ChakraUI</div><div>- Mobile app: React Native, Recoil, React Query</div><div><br></div><div><strong>Responsibilities:</strong></div><div>- Set up the project's codebase, develop main functions of the project (Key member)</div><div>- Build client website, admin website</div><div>- Develop and deploy mobile app to Google Play and App Store</div><div><br></div><div><strong>Project demo link:</strong></div><div>- Website:<a href="https://stockbook.vn" target="_blank"><span style="color: rgb(153, 0, 133)">&nbsp;</span><span style="color: rgb(102, 0, 255)">Here</span></a><br>- Google Play:&nbsp;<a target="_blank" href="https://play.google.com/store/apps/details?id=vn.com.vndirect.cudau"><span style="color: rgb(102, 0, 255)">Here</span></a></div><div>- App Store:&nbsp;<a target="_blank" href="https://apps.apple.com/vn/app/stockbook/id1221215976"><span style="color: rgb(102, 0, 255)">Here</span></a></div>`
   },
   // KMS
   {
@@ -92,8 +92,8 @@ export const PROJECT_LIST: Project[] = [
 
     <div><strong>Project demo link:</strong></div>
     <div>- Website:<a href="https://homefood.com.vn" target="_blank"><span style="color: rgb(153, 0, 133)">&nbsp;</span><span style="color: rgb(102, 0, 255)">Here</span></a>
-    <br>- Google Play:&nbsp;<a target="_blank" href="https://play.google.com/store/apps/details?id=com.homefoodsaleapp"><span style="color: rgb(102, 0, 255)">Here</span></a>​</div>
-    <div>- App Store:&nbsp;<a target="_blank" href="https://play.google.com/store/apps/details?id=com.homefoodsaleapp"><span style="color: rgb(102, 0, 255)">Here</span></a>​</div>`
+    <br>- Google Play:&nbsp;<a target="_blank" href="https://play.google.com/store/apps/details?id=com.homefoodsaleapp"><span style="color: rgb(102, 0, 255)">Here</span></a></div>
+    <div>- App Store:&nbsp;<a target="_blank" href="https://play.google.com/store/apps/details?id=com.homefoodsaleapp"><span style="color: rgb(102, 0, 255)">Here</span></a></div>`
   },
   // Stormik
   {
@@ -134,8 +134,8 @@ export const PROJECT_LIST: Project[] = [
 
     <div><strong>Project demo link:</strong></div>
     <div>- Website:<a href="https://stormik.org" target="_blank"><span style="color: rgb(153, 0, 133)">&nbsp;</span><span style="color: rgb(102, 0, 255)">Here</span></a>
-    <br>- Mobile app:&nbsp;<a target="_blank" href="https://stormik.org/stormik-mobile"><span style="color: rgb(102, 0, 255)">Here</span></a>​</div>
-    <div>- Search engine:&nbsp;<a target="_blank" href="https://stormik.org/search"><span style="color: rgb(102, 0, 255)">Here</span></a>​</div>`
+    <br>- Mobile app:&nbsp;<a target="_blank" href="https://stormik.org/stormik-mobile"><span style="color: rgb(102, 0, 255)">Here</span></a></div>
+    <div>- Search engine:&nbsp;<a target="_blank" href="https://stormik.org/search"><span style="color: rgb(102, 0, 255)">Here</span></a></div>`
   },
   // 84 Go
   {
@@ -175,8 +175,8 @@ export const PROJECT_LIST: Project[] = [
 
     <div><strong>Project demo link:</strong></div>
     <div>- Website:<a href="https://84go.vn" target="_blank"><span style="color: rgb(153, 0, 133)">&nbsp;</span><span style="color: rgb(102, 0, 255)">Here</span></a>
-    <br>- Google Play:&nbsp;<a target="_blank" href="https://play.google.com/store/apps/details?id=com.go84.vn"><span style="color: rgb(102, 0, 255)">Here</span></a>​</div>
-    <div>- App Store:&nbsp;<a target="_blank" href="https://apps.apple.com/vn/app/84-go/id6467232003"><span style="color: rgb(102, 0, 255)">Here</span></a>​</div>`
+    <br>- Google Play:&nbsp;<a target="_blank" href="https://play.google.com/store/apps/details?id=com.go84.vn"><span style="color: rgb(102, 0, 255)">Here</span></a></div>
+    <div>- App Store:&nbsp;<a target="_blank" href="https://apps.apple.com/vn/app/84-go/id6467232003"><span style="color: rgb(102, 0, 255)">Here</span></a></div>`
   },
   // Portfolio Pro
   {

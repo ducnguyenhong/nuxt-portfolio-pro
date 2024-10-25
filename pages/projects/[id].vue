@@ -14,8 +14,8 @@
 </template>
 
 <script setup lang="ts">
-import DOMPurify from 'isomorphic-dompurify';
 import ImageSlider from '~/components/ImageSlider.vue';
+import { WEBSITE_AUTHOR, WEBSITE_DESCRIPTION, WEBSITE_IMAGE, WEBSITE_KEYWORDS, WEBSITE_URL } from '~/utils/const';
 import { PROJECT_LIST } from '~/utils/data-project';
 
 const route = useRoute();

@@ -61,6 +61,12 @@ export const SKILLS: Skill[] = [
     iconAlt: 'NextJS - Nguyễn Hồng Đức Portfolio'
   },
   {
+    name: 'Universal',
+    icon: '/images/AngularUniversal.webp',
+    type: ['WEBSITE'],
+    iconAlt: 'NuxtJS - Nguyễn Hồng Đức Portfolio'
+  },
+  {
     name: 'NuxtJS',
     icon: '/images/NuxtJS.webp',
     type: ['WEBSITE'],
@@ -95,6 +101,18 @@ export const SKILLS: Skill[] = [
     icon: '/images/MongoDB.webp',
     type: ['BACKEND'],
     iconAlt: 'MongoDB - Nguyễn Hồng Đức Portfolio'
+  },
+  {
+    name: 'CI CD',
+    icon: '/images/CICD.webp',
+    type: ['DEPLOY'],
+    iconAlt: 'Nginx - Nguyễn Hồng Đức Portfolio'
+  },
+  {
+    name: 'Docker',
+    icon: '/images/Docker.webp',
+    type: ['DEPLOY'],
+    iconAlt: 'Nginx - Nguyễn Hồng Đức Portfolio'
   },
   {
     name: 'Nginx',

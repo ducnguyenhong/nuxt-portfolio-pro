@@ -82,7 +82,6 @@ useSeoMeta({
   }
 });
 
-const technologies = ['ReactJS', 'Angular', 'VueJS', 'NextJS', 'NuxtJS', 'Typescript', 'React Native', 'ElectronJS'];
 const selected = ref([]);
 
 const projectList = PROJECT_LIST;
