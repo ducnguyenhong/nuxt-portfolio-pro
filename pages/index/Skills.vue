@@ -19,7 +19,7 @@
       </div>
     </div>
 
-    <div class="flex flex-wrap gap-6">
+    <div class="flex flex-wrap gap-4">
       <div
         v-for="item in skillList"
         :key="item.name"
