@@ -29,5 +29,9 @@ export default defineNuxtConfig({
       }
     ]
   },
-  ssr: true
+  ssr: true,
+  devServer: {
+    port: 7000,
+    host: '0.0.0.0' // Lắng nghe trên tất cả các địa chỉ IPv4
+  }
 });

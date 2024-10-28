@@ -4,8 +4,10 @@ services: # định nghĩa các dịch vụ mà ứng dụng cần
   nuxt: # tên dịch vụ, đặt là gì cũng được
     build: . # chỉ thư mục hiện tại (thư mục chứa Dockerfile)
     ports:
-      - '3000:3000' # ánh xạ cổng giữa máy chủ và container
+      - '7000:7000' # ánh xạ cổng giữa máy chủ và container
     volumes:
       - .:/app # thay đổi trong mã nguồn trên máy chủ sẽ được phản ánh ngay lập tức trong container tại thư mục /app => không cần build lại container
     environment:
       - NODE_ENV=production # thiết lập biến môi trường cho container
+      - HOST=0.0.0.0
+      - PORT=7000

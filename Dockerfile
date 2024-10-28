@@ -8,7 +8,7 @@ WORKDIR /app
 COPY package*.json ./
 
 # Cài đặt các dependencies
-RUN npm install
+RUN npm install --legacy-peer-deps
 
 # Sao chép toàn bộ mã nguồn vào container
 COPY . .
@@ -20,4 +20,4 @@ RUN npm run build
 EXPOSE 7000
 
 # Lệnh chạy ứng dụng
-CMD ["npm", "start"]
+CMD ["npm", "run", "start"]
