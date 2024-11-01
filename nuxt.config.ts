@@ -33,5 +33,20 @@ export default defineNuxtConfig({
   devServer: {
     port: 7000,
     host: '0.0.0.0' // Lắng nghe trên tất cả các địa chỉ IPv4
+  },
+  buildModules: ['@nuxtjs/pwa'],
+  pwa: {
+    manifest: {
+      name: 'Portfolio',
+      short_name: 'Portfolio',
+      lang: 'vi',
+      display: 'standalone', // Tùy chọn hiển thị
+      start_url: '/', // URL bắt đầu khi ứng dụng mở
+      background_color: '#ffffff', // Màu nền
+      theme_color: '#3b8070' // Màu chủ đề
+    },
+    icon: {
+      source: '/public/logo.webp' // Đường dẫn đến icon của ứng dụng
+    }
   }
 });
