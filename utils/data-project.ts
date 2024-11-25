@@ -216,5 +216,84 @@ export const PROJECT_LIST: Project[] = [
     <div><strong>Project demo link:</strong></div>
     <div>- Website:<a href="https://nguyenhongduc.net" target="_blank"><span style="color: rgb(153, 0, 133)">&nbsp;</span><span style="color: rgb(102, 0, 255)">Here</span></a>
     </div>`
+  },
+  // DiepTra
+  {
+    id: 'dieptra',
+    name: 'DiepTra',
+    description: 'Website selling beverage ingredients',
+    thumbnail: '/images/projects/dieptra/banner.png',
+    logo: '/images/projects/dieptra/logo.png',
+    technologies: ['React', 'NextJS'],
+    type: 'Freelance',
+    platform: ['WEBSITE'],
+    isTop: true,
+    demoImages: [
+      '/images/projects/dieptra/banner.png',
+      '/images/projects/dieptra/demo-1.png',
+      '/images/projects/dieptra/demo-2.png'
+    ],
+    content: `<div><strong>Project name:</strong></div>
+    <div>Diep Tra</div>
+
+    <div><strong><br></strong></div>
+
+    <div><strong>Description:</strong></div>
+    <div>This is a website that sells beverage ingredients.<br></div>
+
+    <div><br></div>
+
+    <div><strong>Technologies:</strong></div>
+    <div>- Website: React, NextJS, Recoil, ChakraUI</div>
+    
+    <div><br></div>
+    
+    <div><strong>Responsibilities:</strong></div><div>- Frontend Developer</div>
+    
+    <div><br></div>
+
+    <div><strong>Project demo link:</strong></div>
+    <div>- Website:<a href="https://dieptra.com" target="_blank"><span style="color: rgb(153, 0, 133)">&nbsp;</span><span style="color: rgb(102, 0, 255)">Here</span></a>
+    </div>`
+  },
+  // Lermao
+  {
+    id: 'lermao',
+    name: 'Lermao',
+    description:
+      'This is a website that provides comprehensive ingredients for the F&B, coffee, milk tea and beverage industries nationwide.',
+    thumbnail: '/images/projects/lermao/banner.png',
+    logo: '/images/projects/lermao/logo.png',
+    technologies: ['React', 'NextJS'],
+    type: 'Freelance',
+    platform: ['WEBSITE'],
+    isTop: true,
+    demoImages: [
+      '/images/projects/lermao/banner.png',
+      '/images/projects/lermao/demo-1.png',
+      '/images/projects/lermao/demo-2.png'
+    ],
+    content: `<div><strong>Project name:</strong></div>
+    <div>Lermao</div>
+
+    <div><strong><br></strong></div>
+
+    <div><strong>Description:</strong></div>
+    <div>This is a website that provides comprehensive ingredients for the F&B, coffee, milk tea and beverage industries nationwide.<br></div>
+
+    <div><br></div>
+
+    <div><strong>Technologies:</strong></div>
+    <div>- Website: React, NextJS, Recoil, ChakraUI</div>
+    
+    <div><br></div>
+    
+    <div><strong>Responsibilities:</strong></div><div>- Frontend Developer</div>
+    
+    <div><br></div>
+
+    <div><strong>Project demo link:</strong></div>
+    <div>- Website:<a href="https://lermao.com" target="_blank"><span style="color: rgb(153, 0, 133)">&nbsp;</span><span style="color: rgb(102, 0, 255)">Here</span></a>
+    </div>`
   }
 ];

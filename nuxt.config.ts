@@ -30,10 +30,10 @@ export default defineNuxtConfig({
     ]
   },
   ssr: true,
-  devServer: {
-    port: 7000,
-    host: '0.0.0.0' // Lắng nghe trên tất cả các địa chỉ IPv4
-  },
+  // devServer: {
+  //   port: 7000,
+  //   host: '0.0.0.0' // Lắng nghe trên tất cả các địa chỉ IPv4
+  // },
   buildModules: ['@nuxtjs/pwa'],
   pwa: {
     manifest: {
