@@ -12,7 +12,7 @@
         </USelectMenu>
       </div> -->
 
-      <div class="mt-16 grid grid-cols-2 lg:grid-cols-2 gap-x-5 lg:gap-x-7 gap-y-7">
+      <div class="mt-16 grid grid-cols-2 lg:grid-cols-2 gap-x-5 lg:gap-x-10 gap-y-10">
         <div v-for="item in projectList" :key="item.id" class="relative">
           <ProjectItem :item="item" />
         </div>

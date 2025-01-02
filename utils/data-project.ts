@@ -295,5 +295,123 @@ export const PROJECT_LIST: Project[] = [
     <div><strong>Project demo link:</strong></div>
     <div>- Website:<a href="https://lermao.com" target="_blank"><span style="color: rgb(153, 0, 133)">&nbsp;</span><span style="color: rgb(102, 0, 255)">Here</span></a>
     </div>`
+  },
+  // Topmus
+  {
+    id: 'topmus',
+    name: 'Topmus',
+    description: 'This is the homepage of Topmus – a company specializing in managing TikTok idols.',
+    thumbnail: '/images/projects/topmus/banner.png',
+    logo: '/images/projects/topmus/logo.png',
+    technologies: ['React', 'NextJS'],
+    type: 'Freelance',
+    platform: ['WEBSITE'],
+    isTop: true,
+    demoImages: [
+      '/images/projects/topmus/banner.png',
+      '/images/projects/topmus/demo-1.png',
+      '/images/projects/topmus/demo-2.png'
+    ],
+    content: `<div><strong>Project name:</strong></div>
+    <div>Topmus</div>
+
+    <div><strong><br></strong></div>
+
+    <div><strong>Description:</strong></div>
+    <div>This is the homepage of Topmus – a company specializing in managing TikTok idols.<br></div>
+
+    <div><br></div>
+
+    <div><strong>Technologies:</strong></div>
+    <div>- Website: React 19, NextJS 15, Recoil, Tanstack Query, ChakraUI 3</div>
+    
+    <div><br></div>
+    
+    <div><strong>Responsibilities:</strong></div><div>- Frontend Developer</div>
+    
+    <div><br></div>
+
+    <div><strong>Project demo link:</strong></div>
+    <div>- Website:<a href="https://topmus.vercel.app" target="_blank"><span style="color: rgb(153, 0, 133)">&nbsp;</span><span style="color: rgb(102, 0, 255)">Here</span></a>
+    </div>`
+  },
+  // Yume
+  {
+    id: 'yumediy',
+    name: 'Yume Diy',
+    description: 'This is the homepage of Yume Diy – a website specializing in selling photo frames.',
+    thumbnail: '/images/projects/yumediy/banner.png',
+    logo: '/images/projects/yumediy/logo.png',
+    technologies: ['React', 'NextJS'],
+    type: 'Freelance',
+    platform: ['WEBSITE'],
+    isTop: true,
+    demoImages: [
+      '/images/projects/yumediy/banner.png',
+      '/images/projects/yumediy/demo-1.png',
+      '/images/projects/yumediy/demo-2.png'
+    ],
+    content: `<div><strong>Project name:</strong></div>
+    <div>Yume Diy</div>
+
+    <div><strong><br></strong></div>
+
+    <div><strong>Description:</strong></div>
+    <div>This is the homepage of Yume Diy – a website specializing in selling photo frames.<br></div>
+
+    <div><br></div>
+
+    <div><strong>Technologies:</strong></div>
+    <div>- Website: React, NextJS, Recoil, React Query, ChakraUI</div>
+    
+    <div><br></div>
+    
+    <div><strong>Responsibilities:</strong></div><div>- Frontend Developer</div>
+    
+    <div><br></div>
+
+    <div><strong>Project demo link:</strong></div>
+    <div>- Website:<a href="https://yumediy.com" target="_blank"><span style="color: rgb(153, 0, 133)">&nbsp;</span><span style="color: rgb(102, 0, 255)">Here</span></a>
+    </div>`
+  },
+  // MinhTuanHoldings
+  {
+    id: 'minh-tuan-holdings',
+    name: 'MinhTuan Holdings',
+    description:
+      'This is the homepage of Minh Tuan Holdings – a company specializing in construction services and equipment.',
+    thumbnail: '/images/projects/minh-tuan-holdings/banner.png',
+    logo: '/images/projects/minh-tuan-holdings/logo.png',
+    technologies: ['React', 'NextJS'],
+    type: 'Freelance',
+    platform: ['WEBSITE'],
+    isTop: true,
+    demoImages: [
+      '/images/projects/minh-tuan-holdings/banner.png',
+      '/images/projects/minh-tuan-holdings/demo-1.png',
+      '/images/projects/minh-tuan-holdings/demo-2.png'
+    ],
+    content: `<div><strong>Project name:</strong></div>
+    <div>MinhTuan Holdings</div>
+
+    <div><strong><br></strong></div>
+
+    <div><strong>Description:</strong></div>
+    <div>This is the homepage of Minh Tuan Holdings – a company specializing in construction services and equipment.<br></div>
+
+    <div><br></div>
+
+    <div><strong>Technologies:</strong></div>
+    <div>- Website: React 19, NextJS 15, Recoil, Tanstack Query, ChakraUI 3</div>
+    
+    <div><br></div>
+    
+    <div><strong>Responsibilities:</strong></div><div>- Frontend Developer</div>
+    
+    <div><br></div>
+
+    <div><strong>Project demo link:</strong></div>
+    <div>- Website:<a href="https://minhtuanholdings.vn" target="_blank"><span style="color: rgb(153, 0, 133)">&nbsp;</span><span style="color: rgb(102, 0, 255)">Here</span></a>
+    </div>`
   }
 ];
